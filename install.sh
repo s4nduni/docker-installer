@@ -49,9 +49,13 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 
 
-# install Docker compose
+# Install Docker compose
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+
+# Set permission
+
+sudo chmod 666 /var/run/docker.sock
