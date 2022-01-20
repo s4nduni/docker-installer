@@ -29,6 +29,8 @@ Uninstall docker.
 ```
 ./uninstall
 ```
+Please restart your system after running the program.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
