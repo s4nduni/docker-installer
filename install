@@ -52,3 +52,6 @@ sudo systemctl enable containerd.service
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose # setup permissions
 docker-compose --version
+
+# Setup user permission of Docker.socket
+sudo chmod 666 /var/run/docker.sock
