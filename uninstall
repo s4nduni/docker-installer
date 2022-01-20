@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Name   : Docker Installer 
+# Author : W.S.Kaushalya
+# Contributers : Sehan Weerasekara (S3H4N)
+# Date   : 01/19/2022
+# Description : This will install Docker engine in any Ubuntu based desktop.
+
+# Print banner
+tput bold && tput rev
+echo ""
+echo " Docker-Installer v 1.1 "
+echo ""
+tput sgr0
+
+# Stop Docker
+sudo systemctl disable docker.service
+sudo systemctl disable containerd.service
+
+# Uninstall Docker engine
+sudo apt-get purge docker-ce docker-ce-cli containerd.io -y
+
+# Remove existing containers
+sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+
+# Uninstall Docker-Compsose
+sudo rm /usr/local/bin/docker-compose
+
+# Clear leftovers
+sudo apt autoremove -y
