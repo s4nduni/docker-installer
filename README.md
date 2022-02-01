@@ -21,14 +21,9 @@ cd docker-installer
 Install docker.
 
 ```
-./install
+python3 -m docker-installer install
 ```
 
-Uninstall docker.
-
-```
-./uninstall
-```
 Please restart your system after running the program.
 
 ## Contributing
