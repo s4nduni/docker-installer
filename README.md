@@ -12,12 +12,6 @@ git clone https://github.com/s4nduni/docker-installer.git
 
 ## Usage
 
-Go to directory.
-
-```
-cd docker-installer
-```
-
 Install docker.
 
 ```
